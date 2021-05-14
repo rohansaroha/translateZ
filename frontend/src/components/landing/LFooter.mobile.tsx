@@ -15,7 +15,7 @@ const LFooterM = ()=>{
             <div className={styles.bHeader}><span>{book.header}</span></div>
             <div className={styles.sHeader}><span>{book.secondaryHeader}</span></div>
           </div>
-          <div style={{ display: "flex",justifyContent: "space-between" }}>
+          <div style={{ display: "flex",justifyContent: "space-between",alignItems: "center",gap: "1rem" }}>
             <div className={styles.qty}><span>{book.qty}</span></div>
             <div className={styles.detailButton}>
               {book.add ? (<span>a</span>) : null}

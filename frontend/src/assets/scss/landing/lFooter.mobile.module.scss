@@ -21,7 +21,7 @@
   border-radius: 8px;
   display: flex !important;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   &:hover{
     box-shadow: 0.1rem 0.1rem #cdccca;
