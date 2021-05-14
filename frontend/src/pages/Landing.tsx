@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Layout from "../components/base/Layout";
 import LHeader from "../components/landing/LHeader";
 import LAccordion from "../components/landing/LAccordion";

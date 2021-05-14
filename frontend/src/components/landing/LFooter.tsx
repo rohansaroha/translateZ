@@ -8,7 +8,7 @@ const LFooter = ()=>{
     let books:any[] = [];
     booksData.map((book)=>{
       books.push(
-        <div className={styles.card}>
+        <div className={styles.card} key={book.id}>
           <div>
             <div className={styles.bHeader}><span>{book.header}</span></div>
             <div className={styles.sHeader}><span>{book.secondaryHeader}</span></div>
