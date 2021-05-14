@@ -1,0 +1,104 @@
+@import "../styling.module";
+
+.main{
+  margin-bottom: 11vh;
+  background-color: #FDEDD3;
+}
+.content{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 7rem $padding-vertical;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.details{
+}
+.header{
+  margin-bottom: 0.7rem;
+  span{
+    @include fontStyle(3rem,500,#322f2a);
+    font-family: lora !important;
+  }
+}
+
+.pHeader{
+  margin: 0 0.5rem;
+  @include fontStyle(1rem,600,$text-color)
+}
+.sHeader{
+  @include fontStyle(0.9rem,normal,$text-color)
+}
+.text{
+  width: 58%;
+  span{
+    @include fontStyle(1.25rem,normal,#544f46);
+    font-family: lora !important;
+  }
+}
+.border{
+  @include border;
+}
+.card{
+  box-sizing: border-box;
+  padding: 2rem;
+  position: absolute;
+  right: $padding-vertical;
+  background-color: #ffffff;
+  border: solid 2px #EFECE6;
+  border-radius: 8px;
+  height: 26rem;
+  width: 22rem;
+}
+.add{
+  margin: 1.5rem 0;
+  @include button(18rem,3rem,$button-color,#fff,1.2rem)
+}
+
+//for mobile screens
+@media screen and (max-width: 700px){
+  .main{
+    margin-bottom: 14rem;
+    height: 27rem;
+  }
+  .content{
+    padding: 0;
+    display: initial;
+  }
+  .details{
+    text-align: center;
+    padding: 5rem 1.3rem 1rem;
+  }
+  .header{
+    span{
+      @include fontStyle(1.5rem,500,#322f2a);
+    }
+  }
+  .pHeader{
+
+  }
+  .sHeader{
+
+  }
+  .text{
+    width: 100%;
+    span{
+      @include fontStyle(1.25rem,normal,#544f46);
+    }
+  }
+  .card{
+    position: relative;
+    padding: 1rem;
+    right: unset;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: solid 2px #EFECE6;
+    border-radius: 8px;
+    height: 23rem;
+    width: 18rem;
+  }
+  .add{
+    margin: 1rem 0;
+    @include button(15rem,2.5rem,$button-color,#fff,1.1rem)
+  }
+}

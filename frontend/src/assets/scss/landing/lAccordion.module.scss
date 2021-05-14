@@ -1,0 +1,70 @@
+@import "../styling.module";
+
+.main{
+  padding: 7rem $padding-vertical;
+}
+.content{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+.accHeader{
+  @include fontStyle(1.3rem,500,$text-color)
+}
+.accDescription{
+  @include fontStyle(1.1rem,normal,$text-color)
+}
+.accBox{
+  width: 50%;
+  margin-right: 5%;
+}
+.imgBox{
+}
+.contentImg{
+  border-radius: 6px;
+  background-color: #daebff;
+  width: 35rem;
+  height: 23.1rem;
+}
+.accImg{
+  display: none;
+}
+
+
+@media screen and (max-width: 700px){
+  .main{
+    padding: 3rem 1rem;
+    margin: 0 auto;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+  }
+  .accHeader{
+    @include fontStyle(1rem,500,$text-color)
+  }
+  .accDescription{
+    @include fontStyle(0.9rem,normal,$text-color)
+  }
+  .accBox{
+    width: 100%;
+    margin-right: 0;
+  }
+  .imgBox{
+    display: none;
+  }
+  .contentImg{
+    display: none;
+  }
+  .accImg{
+    display: initial;
+    border-radius: 6px;
+    background-color: #daebff;
+    width: 8rem;
+    height: 6rem;
+    margin-right: 0;
+  }
+}

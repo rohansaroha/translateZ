@@ -1,0 +1,13 @@
+node_modules
+.idea/
+dist
+.idea
+.package-lock.json
+.DS_Store
+.DS_Store/
+build
+.env
+.env.development
+.env.production
+
+.eslintcache
